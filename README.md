@@ -17,6 +17,7 @@ I made an algorithm for one of my games that makes the camera snap to the height
 The only variable you have to set yourself is the transition height.
 
 For x values, you'll want to replace the following:
-y -> x
-view_hview[0] -> view_wview[0]
-view_yview[0] -> view_xview[0]
+
+* y -> x
+* view_hview[0] -> view_wview[0]
+* view_yview[0] -> view_xview[0]
