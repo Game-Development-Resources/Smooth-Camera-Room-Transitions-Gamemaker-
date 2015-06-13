@@ -1,8 +1,10 @@
 # Smooth-Camera-Transitions-Gamemaker-
 
+[Video of code in action](https://www.youtube.com/watch?v=Mw02Pni0v9Q&index=1&list=PLye9mcKwe2zyYF3ei2xr2YznNDZJxQ_85)
+
 The code below works in Gamemaker.
 
-I made an algorithm for one of my games that makes the camera snap to the height of the view in the room with smooth transition in between (imagine shovel knight but without the game being paused in between rooms, and the player always has full control over the character). The script below works for y values, but you could easily modify this for x values as well. I tried to write out an explanation for how the code works, but the algorithm is somewhat complicated.
+I made an algorithm for one of my games that makes the camera snap to the height of the view in the room with smooth transition in between (imagine shovel knight but without the game being paused in between rooms, and the player always has full control over the character). The script below works for y values, but you could easily modify this for x values as well.
 
 	t = #; //transition height
 	v = view_hview[0];
@@ -25,8 +27,6 @@ For x values, you'll want to replace the following:
 ---
 Further explanation
 -
-
-Alright, so I've been asked by multiple people to explain what's going on.
 
 First of all:
 
