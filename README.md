@@ -1,4 +1,4 @@
-# Smooth-Camera-Transitions-Gamemaker-
+# Smooth-Camera-Room-Transitions-Gamemaker-
 
 [Video of code in action](https://www.youtube.com/watch?v=Mw02Pni0v9Q&index=1&list=PLye9mcKwe2zyYF3ei2xr2YznNDZJxQ_85)
 
