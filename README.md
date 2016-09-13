@@ -1,6 +1,6 @@
 # Smooth-Camera-Room-Transitions-Gamemaker-
 
-[[ https://i.gyazo.com/d3edc64494349c04d16144c9e6c1d148.gif | height = 200px ]]
+[Gif of code in action](https://i.gyazo.com/d3edc64494349c04d16144c9e6c1d148.gif)
 
 [Video of code in action](https://www.youtube.com/watch?v=Mw02Pni0v9Q&index=1&list=PLye9mcKwe2zyYF3ei2xr2YznNDZJxQ_85)
 
