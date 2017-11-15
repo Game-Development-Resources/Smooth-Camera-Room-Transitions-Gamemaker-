@@ -106,7 +106,7 @@ Percent of transition zone crossed by player:
 
 	((t + y) - (snap + v)) / (t*2)
 	
-And we just multiply by "v" to set the view to the corresponding percent of the way from one snap position (v) to the next.
+And we just multiply by **v** to set the view to the corresponding percent of the way from one snap position (v) to the next.
 
 Since the transition zone (t) is the radius rather than the full width of the transition zone (t), in order to figure out what percent the player has crossed, we must multiply it by two.
 	
@@ -116,7 +116,13 @@ Now we are just left with figuring out where the player is in relation to the tr
 
 	(t + y) - (snap + v)
 
-Remember, we're looking for a value of less than t\*2 here because we want to end up with a percent when we divide by t\*2. This one's kinda weird, but we're really just taking the player's y position (y) modified by the transition height (t) and subtracting the snap value modified by the view height (v). While y is in the transition zone, the number this spits out is in fact a positive number less than t\*2. I can't remember how I figure out this part of the algorithm, but it works. So there you go, now you know (hopefully I explained it well enough) what this is and does:
+*We're going to be looking for a value of between **0** and **t\*2** here because we want to end up with a percent when we divide by **t\*2**.*
+
+If we consider the middle point of the transition zone (when y is in the transition zone), y can be anywhere from **-t** to **t** distance from the middle point. That middle point is **snap + v**. So now in order to shift the y value to be between **0** and **t\*2** in realtion to the middle point, we simply add **t** to the whole thing.
+
+*Note: in the equation, it is written as **(t + y) - (snap + v)** instead of **t + y - (snap + v)**, because I'm trying to compartmentalize the the idea of keeping the y as a positive value in relation to the middle point.*
+
+So there you go, now you know what this is and does (hopefully I explained it well enough):
 
 	snap = ((y - v/2) div v)*v
     view_yview[0] = snap + (((t + y) - (snap + v)) / (t*2))*v
